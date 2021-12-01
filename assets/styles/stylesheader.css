@@ -1,0 +1,39 @@
+body {
+    max-width: 1480px;
+    margin: auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    max-width: 1170px;
+    margin: auto;
+
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.header__items {
+    margin-top: 20px;
+    margin-left: 10%;
+
+}
+
+.nav__main {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav__items {
+    margin-left: 5%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+}
