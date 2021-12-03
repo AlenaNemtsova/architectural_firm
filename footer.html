@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
     <title>Document</title>
 
     <style>
@@ -12,20 +16,21 @@
         }
 
 
-        footer {
+        .footer {
             height: 417px;
             max-width: 100%;
-            background-color: #2C2C2C;
+            font-family: 'Roboto', sans-serif;
             color: #FFFFFF;
+            background-color: #2C2C2C;
         }
 
         .footer-grid {
-            height: 85%;
-            max-width: 100%;
             display: grid;
             grid-template-columns: 20% 25% 30% 25%;
             grid-template-rows: 1fr 15%;
 
+            height: 85%;
+            max-width: 100%;
             padding-top: 58px;
             padding-right: 5%;
             padding-left: 5%;
@@ -40,7 +45,7 @@
             max-width: 100%;
         }
 
-        .nav {
+        .footer-menu {
             grid-column: 2/3;
             grid-row: 1/2;
         }
@@ -60,31 +65,49 @@
             grid-column: 1/5;
             grid-row: 2/3;
             text-align: center;
+
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 22px;
+            color: #C8C8C8;
         }
 
-        ul {
+        .footer ul {
             list-style-type: none;
             padding-left: 0;
             margin: 0;
         }
 
-        footer a { 
+        .footer a { 
             text-decoration: none;
             color: #FFFFFF;
         }
 
-        footer h3 {
+        .footer h3 {
             margin-top: 0;
-            margin-bottom: 25;
+            margin-bottom: 25px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18.75px;
         }
 
-        .footer-nav li {
+        .footer-menu li {
             margin-bottom: 16px;
         }
 
         .contacts img {
             margin-right: 15px;
         }
+
+        .footer-menu__link, .contacts span, .contacts a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+
 
         .social__item {
             display: inline-block;
@@ -120,7 +143,7 @@
             max-width: 100%;
             display: grid;
             grid-template-columns: 20% 1fr 1fr;
-            grid-template-rows: 1fr 30% 15%;
+            grid-template-rows: 1fr 25% 10%;
 
             padding-top: 58px;
             padding-right: 5%;
@@ -136,7 +159,7 @@
                 grid-row: 1/2;
             }
 
-            .nav {
+            .footer-nav {
                 grid-column: 2/3;
                 grid-row: 1/2;
             }
@@ -155,8 +178,7 @@
 
             .rights {
                 grid-column: 1/4;
-                grid-row: 3/4;
-                text-align: center;
+                grid-row: 3/4;  
             }
         }
 
@@ -168,29 +190,34 @@
 </head>
 
 <body>
-    <footer>
+    <footer class="footer">
     <div class="footer-grid">
         <div class="logo">
             <img src="Group 11 1.svg" alt="logo">
         </div>
-        <div class="nav">
+        <nav class="footer-nav">
             <h3>Information</h3>
-            <ul class="footer-nav">
-                <li><a href="">Main</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Certifications</a></li>
-                <li><a href="">Contacts</a></li>
+            <ul class="footer-menu">
+                <li class="footer-menu__item">
+                    <a href="" class="footer-menu__link">Main</a></li>
+                <li class="footer-menu__item">
+                    <a href="" class="footer-menu__link">Gallery</a></li>
+                <li class="footer-menu__item">
+                    <a href="" class="footer-menu__link">Projects</a></li>
+                <li class="footer-menu__item">
+                    <a href="" class="footer-menu__link">Certifications</a></li>
+                <li class="footer-menu__item">
+                    <a href="" class="footer-menu__link">Contacts</a></li>
             </ul>
-        </div>
+        </nav>
 
         <div class="contacts">
             <h3>Contacts</h3>
             <div>
-                <div>
+                <address>
                     <img src="Vector.svg" alt="">
                     <span>1234 Sample Street Austin Texas 78704</span>
-                </div>
+                </address>
                 <address>
                     <img src="Group.svg" alt="">
                     <a href="tel:512.333.2222">512.333.2222</a>
@@ -221,7 +248,7 @@
                 </li>
             </ul>
         </div>
-        <p class="rights">© 2021 All Rights Reserved</p>
+        <span class="rights">© 2021 All Rights Reserved</span>
     </div>
     </footer>
     
