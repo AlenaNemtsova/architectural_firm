@@ -5,19 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .contactus {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .contactus__title {
+            font-weight: 300;
+            font-size: 64px;
+            line-height: 64px;
+            margin-top: 0;
+            margin-bottom: 22px;
+        }
+
+
+        .contactus__grid {
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 30% 60%;
+            column-gap: 30px;
+        }
+
+        .contactus__img {
+            max-width: 100%;
+            
+        }
+
+        .contactus__form_field, .contactus__form_textarea, .contactus__form_btn {
+            display: block;
+            background-color: #F3F3F3;
+            border: none;
+
+            color: #8D8D8D;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .contactus__form_field, .contactus__form_textarea {
+            width: 100%;
+            padding-left: 21px;
+            box-sizing: border-box;
+        }
+
+        .contactus__form_field {
+            height: 46px;
+            margin-bottom: 10px;
+        }
+
+        .contactus__form_textarea {
+            height: 147px;
+            margin-bottom: 77px;
+        }
+
+
+        .contactus__form_btn {
+            width: 60%;
+            height: 71px;
+
+            background-color: #333333;
+            
+            color: #FFFFFF;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width: 767px) {
+            .contactus__grid {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .contactus__img {
+                display: none;
+            }
+
+            .contactus__form_textarea {
+                margin-bottom: 10px;
+            }
+        }
+
+
+    </style>
+
+
+
 </head>
 <body>
-    <section>
-        <h2>Contact Us</h2>
-        <form name="input" action="" method="get">
-            <input type="text" name="name" placeholder="Name">
-            <input type="text" name="phone_number" placeholder="Phone Number">
-            <input type="text" name="email" placeholder="E-mail">
-            <input type="text" name="interested_in" placeholder="Interested In">
-            <textarea name="message" placeholder="Name">
-
-            <button type="submit">SEND EMAIL</button>
-        </form>
+    <section class="contactus">
+        <h2 class="contactus__title">Contact Us</h2>
+        <div class="contactus__grid">
+            <form class="contactus__form" name="input" action="" method="get">
+                <input class="contactus__form_field" type="text" name="name" placeholder="Name">
+                <input class="contactus__form_field" type="text" name="phone_number" placeholder="Phone Number*">
+                <input class="contactus__form_field" type="text" name="email" placeholder="E-mail*">
+                <input class="contactus__form_field" type="text" name="interested_in" placeholder="Interested In">
+                <textarea class="contactus__form_textarea" name="message" placeholder="Message*"></textarea>
+                <button class="contactus__form_btn" type="submit" formaction="">SEND EMAIL</button>
+            </form>
+            <img class="contactus__img" src="assets/images/image 12.jpg" alt="man-with-phone">
+        </div>
 
     </section>
 </body>
