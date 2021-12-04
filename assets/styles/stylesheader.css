@@ -1,6 +1,14 @@
 body {
     max-width: 1480px;
     margin: auto;
+    font-family: 'Roboto', 'Lora', serif;
+    font-size: 16px;
+}
+
+.h2 {
+    color: #BDBDBD;
+    font-size: 64px;
+    font-weight: lighter;
 }
 
 .header {
@@ -22,7 +30,7 @@ body {
 }
 
 .nav__items {
-    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #main {
@@ -32,8 +40,6 @@ body {
     padding-right: 20px;
     margin-left: none;
 }
-
-
 
 .nav a {
     text-decoration: none;
@@ -60,10 +66,32 @@ body {
     position: relative;
 }
 
+.front__items_lorum {
+    color: #333333;
+    font-size: 64px;
+    margin-bottom: 90px;
+    font-weight: bold;
+}
+
+.front__items_arows {
+    margin-right: 23px;
+}
+
+.front__items_pages {
+    margin-top: 90px;
+    color: #BDBDBD;
+    font-size: 24px;
+}
+
 .bottom-left {
     position: relative;
     bottom: 80px;
     left: 5px;
+}
+
+.pages {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about {
@@ -101,7 +129,7 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
-.mainfocus__items_h1 {
+.mainfocus__items_h2 {
     grid-area: 1/1/2/5;
 }
 
@@ -112,15 +140,26 @@ body {
 .ourprojects {
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
 }
 
-.ourprojects__h1 {
+.ourprojects__items_sampleproject {
+    display: grid;
+    grid-template-columns: 570px;
+    grid-template-rows: 255px;
+    filter: brightness(50%);
+}
+
+.sampleproject__button1 {
+    background-image: url(/assets/images/Rectangle\ 12.png);
+    color: #FFFFFF;
+}
+
+.ourprojects__h2 {
     margin-top: 50px;
 }
 
 .ourprojects__items {
-    padding: 5px;
+    padding-right: 10px;
 }
 
 .ourprojects__items_button {
@@ -129,4 +168,172 @@ body {
 
 img {
     width: 100%;
+}
+
+.footer {
+    height: 417px;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    background-color: #2C2C2C;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 20% 25% 30% 25%;
+    grid-template-rows: 1fr 15%;
+
+    height: 85%;
+    max-width: 100%;
+    padding-top: 58px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.footer-menu {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.contacts {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 70%;
+}
+
+.social-media {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.rights {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #C8C8C8;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+
+.footer-menu li {
+    margin-bottom: 16px;
+}
+
+.contacts img {
+    margin-right: 15px;
+}
+
+.footer-menu__link,
+.contacts span,
+.contacts a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+
+.social__item {
+    display: inline-block;
+}
+
+.social__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.fb {
+    background: url(facebook.svg) no-repeat center;
+}
+
+.twitter {
+    background: url(twitter.svg) no-repeat center;
+}
+
+.linkedin {
+    background: url(Linked_In.svg) no-repeat center;
+}
+
+.pinterest {
+    background: url(pinterest.svg) no-repeat center;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .footer-grid {
+        height: 85%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 20% 1fr 1fr;
+        grid-template-rows: 1fr 25% 10%;
+
+        padding-top: 58px;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .logo img {
+        max-width: 80%;
+    }
+
+    .logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .footer-nav {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .contacts {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        width: 70%;
+    }
+
+    .social-media {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        align-self: center;
+    }
+
+    .rights {
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
 }
