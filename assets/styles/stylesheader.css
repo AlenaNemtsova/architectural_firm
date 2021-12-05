@@ -17,6 +17,7 @@ body {
     grid-template-rows: 1fr;
     max-width: 1170px;
     margin: auto;
+    margin-bottom: 50px;
 
 }
 
@@ -126,7 +127,7 @@ body {
 .mainfocus {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .mainfocus__items_h2 {
@@ -146,7 +147,6 @@ body {
     display: grid;
     grid-template-columns: 570px;
     grid-template-rows: 255px;
-    filter: brightness(50%);
 }
 
 .sampleproject__button1 {
@@ -251,8 +251,27 @@ img {
     .contactus__form_textarea {
         margin-bottom: 20px;
     }
-}
 
+
+    .h2 {
+        font-size: 22px;
+    }
+
+    .front__items_lorum {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .front__items_pages {
+        margin-top: 5px;
+    }
+
+    .ourprojects__items_sampleproject {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 255px;
+    }
+}
 
 
 .footer {
