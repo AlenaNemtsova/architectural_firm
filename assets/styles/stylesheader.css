@@ -147,7 +147,6 @@ body {
     display: grid;
     grid-template-columns: 570px;
     grid-template-rows: 255px;
-    filter: brightness(50%);
 }
 
 .sampleproject__button1 {
