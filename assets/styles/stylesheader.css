@@ -170,6 +170,91 @@ img {
     width: 100%;
 }
 
+
+.contactus {
+    max-width: 1170px;
+    margin: 120px auto;
+}
+
+.contactus__title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.contactus__grid {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    column-gap: 30px;
+}
+
+.contactus__img {
+    max-width: 100%;
+}
+
+.contactus__form_field,
+.contactus__form_textarea,
+.contactus__form_btn {
+    display: block;
+    background-color: #F3F3F3;
+    border: none;
+
+    color: #8D8D8D;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contactus__form_field,
+.contactus__form_textarea {
+    width: 100%;
+    padding-left: 21px;
+    box-sizing: border-box;
+}
+
+.contactus__form_field {
+    height: 46px;
+    margin-bottom: 10px;
+}
+
+.contactus__form_textarea {
+    height: 147px;
+    padding-top: 14px;
+    margin-bottom: 77px;
+}
+
+.contactus__form_btn {
+    width: 60%;
+    height: 71px;
+
+    color: #FFFFFF;
+    font-size: 12px;
+    cursor: pointer;
+    background: #333333 url('assets/images/arrow-2-right-long.svg') no-repeat center right;
+}
+
+
+@media screen and (max-width: 767px) {
+    .contactus__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 390px;
+    }
+
+    .contactus__img {
+        display: none;
+    }
+
+    .contactus__form_textarea {
+        margin-bottom: 20px;
+    }
+}
+
+
+
 .footer {
     height: 417px;
     max-width: 100%;
