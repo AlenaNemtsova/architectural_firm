@@ -63,12 +63,28 @@
         .contactus__form_btn {
             width: 60%;
             height: 71px;
+            padding-left: 50px;
+
+            display: inline-flex;
+            align-items: center;
 
             color: #FFFFFF;
             font-size: 12px;
             cursor: pointer;
+            background-color: #333333;
+        }
 
-            background: #333333 url('assets/images/arrow-2-right-long.svg') no-repeat center right;
+        .arrow::after {
+            content: ""; /* свойство добавлять обязательно, иначе элемент не будет виден */
+            display: inline-block;
+            
+            width: 24px;
+            height: 24px;
+            margin-left: 12px;
+            background-image: url(assets/images/arrow-2-right-long.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
 
@@ -103,7 +119,7 @@
                 <input class="contactus__form_field" type="text" name="email" required placeholder="E-mail*" >
                 <input class="contactus__form_field" type="text" name="interested_in" placeholder="Interested In">
                 <textarea class="contactus__form_textarea" name="message" required placeholder="Message*"></textarea>
-                <button class="contactus__form_btn" type="submit" formaction="url">SEND EMAIL</button>
+                <button class="contactus__form_btn arrow" type="submit" formaction="url">SEND EMAIL</button>
             </form>
             <img class="contactus__img" src="assets/images/image 12.jpg" alt="man-with-phone">
         </div>
