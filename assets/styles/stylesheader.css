@@ -229,12 +229,31 @@ img {
 .contactus__form_btn {
     width: 60%;
     height: 71px;
+    padding-left: 50px;
+
+    display: inline-flex;
+    align-items: center;
 
     color: #FFFFFF;
     font-size: 12px;
     cursor: pointer;
-    background: #333333 url('assets/images/arrow-2-right-long.svg') no-repeat center right;
+    background-color: #333333;
 }
+
+.arrow::after {
+    content: "";
+    /* свойство добавлять обязательно, иначе элемент не будет виден */
+    display: inline-block;
+
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    background-image: url(../images/arrow-2-right-long.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 
 @media screen and (max-width: 767px) {
@@ -418,19 +437,19 @@ img {
 }
 
 .fb {
-    background: url(assets/images/facebook.svg) no-repeat center;
+    background: url(../images/facebook.svg) no-repeat center;
 }
 
 .twitter {
-    background: url(assets/images/twitter.svg) no-repeat center;
+    background: url(../images/twitter.svg) no-repeat center;
 }
 
 .linkedin {
-    background: url(assets/images/linked-in.svg) no-repeat center;
+    background: url(../images/linked-in.svg) no-repeat center;
 }
 
 .pinterest {
-    background: url(assets/images/pinterest.svg) no-repeat center;
+    background: url(../images/pinterest.svg) no-repeat center;
 }
 
 
