@@ -1,72 +1,73 @@
-.container {
-    max-width: 1170px;
-    padding: 0 1rem;
-    margin: 0 auto;
+.gallery_container {
+  max-width: 1170px;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
 .title_gallery {
-    font: 64px/64px Roboto, sans-serif;
-    margin: 60px 0;
+  font: 64px/64px Roboto, sans-serif;
+  margin: 60px 0;
 }
 
 .title_gallery_faded {
-    color: #BDBDBD;
-    font-weight: 300;
+  color: #bdbdbd;
+  font-weight: 300;
 }
 
 .title_gallery_bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .gallery {
-    display: grid;
-    grid-template: 260px / repeat(auto-fit, 210px);
-    grid-auto-rows: 260px;
-    grid-gap: 30px;
+  display: grid;
+  grid-template: 260px / repeat(auto-fit, 210px);
+  grid-auto-rows: 260px;
+  grid-gap: 30px;
 }
 
 .paginator {
-    margin: 70px 0 120px;
-    display: flex;
-    gap: 25px;
+  margin: 70px 0 120px;
+  display: flex;
+  gap: 25px;
 }
 
 .paginator__counter {
-    flex: 0 0 auto;
-    font: 24px/24px Roboto, sans-serif;
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  flex: 0 0 auto;
+  font: 24px/24px Roboto, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-.paginator__counter__current {}
+.paginator__counter__current {
+}
 
 .paginator__counter__delimeter {
-    width: 30px;
-    height: 30px;
-    flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
 }
 
 .paginator__counter__all {
-    color: #BDBDBD;
+  color: #bdbdbd;
 }
 
 .paginator__button {
-    border: 1px solid #F2F2F2;
-    background: #fff center center no-repeat;
-    width: 53px;
-    height: 53px;
-    flex: 0 0 53px;
+  border: 1px solid #f2f2f2;
+  background: #fff center center no-repeat;
+  width: 53px;
+  height: 53px;
+  flex: 0 0 53px;
 }
 
 .paginator__button_active {
-    background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 .paginator__button_left {
-    background-image: url(/assets/images/gallery-arrow-left.svg);
+  background-image: url(/assets/images/gallery-arrow-left.svg);
 }
 
 .paginator__button_right {
-    background-image: url(/assets/images/gallery-arrow-right.svg);
+  background-image: url(/assets/images/gallery-arrow-right.svg);
 }
